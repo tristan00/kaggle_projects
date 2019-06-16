@@ -5,8 +5,24 @@ path = r'C:\Users\trist\Documents\champs-scalar-coupling'
 
 
 df_dipole_moments = pd.read_csv('{0}/{1}'.format(path, 'dipole_moments.csv'))
-#define dipole movement
-#are these 3 dim positions, if so investigate angles as features
+'''
+TODO: define dipole movement. are these 3 dim positions, if so investigate angles as features. How is the positioning defined?
+
+Polar vs non-polar, 
+Nonpolar when small diff in electronegativity.
+
+Polar bonds have dipole moment, or asymetric charge distribution leading to electron cloud being asymetric
+
+Moment would point to more negative 
+
+
+possible features:
+Total magnitude
+Angles
+
+
+'''
+
 
 
 df_magnetic_shielding_tensors = pd.read_csv('{0}/{1}'.format(path, 'magnetic_shielding_tensors.csv'))
