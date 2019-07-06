@@ -104,6 +104,6 @@ val_y = val['scalar_coupling_constant']
 
 null_columns4=train_x.columns[train_x.isnull().any()]
 
-rf = RandomForestRegressor()
+rf = RandomForestRegressor(max_depth=10)
 rf.fit(train_x, train_y)
-print(mean_squared_error(rf.predict(val_x), val_y))
+print(mean_squared_error(rf.predict(val_x), val_y)) # 16.957253706071096

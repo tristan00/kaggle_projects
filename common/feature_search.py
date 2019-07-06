@@ -2,6 +2,8 @@ import random
 import pandas as pd
 from sklearn.model_selection import cross_val_score
 
+
+
 class FeatureFinder:
     def __init__(self, df, target_column_name):
         self.df = df
@@ -13,10 +15,12 @@ class FeatureFinder:
         for iteration in range(max_iterations):
             pass
 
-    def remove_worst_row_feature(self, current_columns, max_columns_to_consider):
+    def remove_worst_row_feature(self, current_features, max_features_to_consider):
         pass
 
-    def add_best_found_row_feature(self, current_columns, max_columns_to_consider):
+
+
+    def add_best_found_row_feature(self, current_features, max_features_to_consider):
         pass
 
 
